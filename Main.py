@@ -9,3 +9,6 @@ st.title("Symbolic Math Chain")
 
 question=st.text_input("Enter your question here")
 
+if st.button("Submit"):
+    answer = llm_symbolic_math.run(question)
+    st.write(answer)
